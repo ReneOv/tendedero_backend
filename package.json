@@ -1,0 +1,33 @@
+{
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && node lib/index.js",
+    "start": "node lib/index.js",
+    "deploy": "npm run build && gcloud app deploy"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "apollo-server": "^2.21.1",
+    "firebase-admin": "^9.5.0",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.11.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^2.9.2"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReneOv/tendedero_backend.git"
+  },
+  "keywords": [],
+  "author": "Rene Ojeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReneOv/tendedero_backend/issues"
+  },
+  "homepage": "https://github.com/ReneOv/tendedero_backend#readme"
+}
